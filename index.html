@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMTES - Maceió</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Foco acessível usando o Laranja da Prefeitura */
+        *:focus { outline: 3px solid #f58428; outline-offset: 2px; }
+        
+        /* Animação suave para o fundo azul */
+        .bg-animate {
+            background-size: 200% 200%;
+            animation: gradientMove 15s ease infinite;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<!-- Fundo com o Azul #1877F2 solicitado -->
+<body class="bg-[#1877F2] bg-gradient-to-br from-[#1877F2] via-[#14467C] to-[#1877F2] bg-animate min-h-screen flex flex-col items-center justify-center py-10 px-4 font-sans relative overflow-x-hidden">
+
+    <!-- Efeito de luz difusa laranja ao fundo para compor a paleta -->
+    <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-[#f58428] rounded-full mix-blend-screen filter blur-[100px] opacity-20 fixed z-0"></div>
+
+    <!-- Container Principal (Branco) com uma borda superior laranja para dar estilo institucional -->
+    <main class="relative my-auto max-w-md w-full bg-white rounded-3xl shadow-2xl overflow-hidden p-6 sm:p-8 z-10 border-t-8 border-[#f58428]">
+        
+        <!-- Logo -->
+        <div class="flex justify-center mb-6">
+            <img src="logo-semtes.png" alt="Logotipo da SEMTES" class="w-32 h-32 object-contain drop-shadow-sm transition-transform hover:scale-105 duration-500">
+        </div>
+
+        <!-- Cabeçalho -->
+        <header class="text-center mb-6">
+            <h1 class="text-3xl font-black text-[#14467C] mb-1 uppercase tracking-tight">
+                SEMTES
+            </h1>
+            <h2 class="text-xs sm:text-sm font-bold text-[#f58428] tracking-widest mb-4">
+                @semtesmaceio
+            </h2>
+        </header>
+
+        <!-- Seção: Quem Somos -->
+        <section class="mb-8">
+            
+            <!-- Texto com o Azul #14467C levemente suavizado para leitura longa -->
+            <p class="text-[#14467C]/80 leading-relaxed text-sm sm:text-base text-center font-medium">
+                A <strong>Secretaria Municipal do Trabalho, Emprego e Economia Solidária</strong>.
+            </p>
+        </section>
+
+        <!-- Link Principal -->
+        <nav aria-label="Link para o site da SEMTES">
+            <a href="https://maceio.al.gov.br/secretarias-e-orgaos/semtes" 
+               class="flex items-center justify-center w-full py-4 px-6 bg-[#f58428] text-white font-bold rounded-2xl shadow-lg shadow-[#f58428]/30 hover:shadow-[#f58428]/50 hover:-translate-y-1 hover:bg-[#d9701d] transition-all duration-300 active:scale-95 text-base sm:text-lg">
+               Acessar Site Oficial
+            </a>
+            <br>
+            <a href="/links/sine.html" 
+               class="flex items-center justify-center w-full py-4 px-6 bg-[#f58428] text-white font-bold rounded-2xl shadow-lg shadow-[#f58428]/30 hover:shadow-[#f58428]/50 hover:-translate-y-1 hover:bg-[#d9701d] transition-all duration-300 active:scale-95 text-base sm:text-lg">
+               SINE - Maceió
+            </a>
+        </nav>
+
+        <!-- Rodapé -->
+        <footer class="mt-8 text-center text-xs font-semibold text-[#14467C]/50 border-t border-slate-100 pt-5">
+            © 2026 SEMTES - Maceió
+        </footer>
+    </main>
+
+</body>
+</html>
